@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hex-Parametrisierung</title>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="rangehex.js"></script>
+    <style>
+      div {
+      border-radius: 15px;
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      z-index: 1;
+      }
+      input {
+      width: 100%;
+      z-index: 100;
+      position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <span>Spellrange (m): </span><span class="spellrange">###</span><br>
+    <input class="spellrange" type="range" min="1" max="100" value=""><br>
+    <span>Monster Pos. Uncertainty (m): </span><span class="sigma">###</span><br>
+    <input class="sigma" type="range" min="0" max="20" value="4"><br>
+    <span>Number of Monsters: </span><span class="nummonsters">###</span><br>
+    <input class="nummonsters" type="number" min="1" max="55555" value="20"><br>
+  </body>
+</html>
